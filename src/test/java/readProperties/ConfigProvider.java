@@ -22,6 +22,4 @@ public interface ConfigProvider {
     Boolean IS_DEMO_ADMIN = readConfig().getBoolean("usersParams.demo.isAdmin");
 
 
-
-
 }
