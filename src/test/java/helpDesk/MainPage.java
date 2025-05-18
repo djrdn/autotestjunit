@@ -26,11 +26,14 @@ public class MainPage extends BaseSeleniumPage {
     @FindBy(id = "id_due_date")
     private WebElement dateField;
 
-    @FindBy(xpath = "//table[@id='ui-datepicker-calendar']//a[text()='23']")
+    @FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[4]/td[6]/a")
     private WebElement dateValue;
 
     @FindBy(id = "id_submitter_email")
     private WebElement email;
+
+    @FindBy(xpath="//*[@id=\"content-wrapper\"]/div/div/div/div[2]/div/div/form/button")
+    private WebElement submitButton;
 
 
     public MainPage() {
@@ -46,6 +49,7 @@ public class MainPage extends BaseSeleniumPage {
         dateField.click();
         dateValue.click();
         email.sendKeys(emailValue);
+        submitButton.click();
         return this;
     }
 }
