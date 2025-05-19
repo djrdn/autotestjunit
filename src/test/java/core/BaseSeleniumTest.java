@@ -25,7 +25,7 @@ abstract public class BaseSeleniumTest {
     @After
     public void tearDown(){
         driver.close();//закриває хромдрайвер
-        // driver.quit(); // закриває бразузер
+         driver.quit(); // закриває бразузер
     }
 
 
