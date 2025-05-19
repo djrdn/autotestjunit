@@ -10,10 +10,10 @@ public class TicketPage extends BaseSeleniumPage {
     @FindBy(xpath = "//*[@id=\"content-wrapper\"]/div/div[1]/div/div/table/tbody/tr[2]/td[2]")
     private WebElement email;
 
-    @FindBy(xpath = "//h3")
+    @FindBy(xpath = "//*[@id=\"content-wrapper\"]/div/div[1]/div/div/table/thead/tr/th/h3")
     private WebElement title;
 
-    @FindBy(xpath = "//*[@id=\"ticket-description\"]")
+    @FindBy(xpath = "//*[@id=\"ticket-description\"]/p")
     private WebElement body;
 
     public TicketPage() {

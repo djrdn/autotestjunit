@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class TicketsPage extends BaseSeleniumPage {
     @FindBy(id = "search_query")
     private WebElement searchField;
-    @FindBy(id = "//div[@class='tickettitle']")
+    @FindBy(xpath = "//*[@id=\"ticketTable\"]/tbody/tr[1]/td[2]/div")
     private WebElement ticket;
 
     public TicketsPage() {

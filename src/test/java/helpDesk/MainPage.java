@@ -32,7 +32,7 @@ public class MainPage extends BaseSeleniumPage {
     @FindBy(id = "id_submitter_email")
     private WebElement email;
 
-    @FindBy(xpath="/html/body/div[1]/div/div/div/div/div[2]/div/div/form/button")
+    @FindBy(xpath="//*[@id=\"content-wrapper\"]/div/div/div/div[2]/div/div/form/button")
     private WebElement submitButton;
 
     @FindBy(id = "userDropdown")
