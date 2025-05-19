@@ -32,9 +32,11 @@ public class MainPage extends BaseSeleniumPage {
     @FindBy(id = "id_submitter_email")
     private WebElement email;
 
-    @FindBy(xpath="//*[@id=\"content-wrapper\"]/div/div/div/div[2]/div/div/form/button")
+    @FindBy(xpath="/html/body/div[1]/div/div/div/div/div[2]/div/div/form/button")
     private WebElement submitButton;
 
+    @FindBy(id = "userDropdown")
+    private WebElement loginButton;
 
     public MainPage() {
         driver.get(ConfigProvider.URL);
@@ -51,5 +53,10 @@ public class MainPage extends BaseSeleniumPage {
         email.sendKeys(emailValue);
         submitButton.click();
         return this;
+    }
+
+    public LoginPage openLoginPage(){
+        loginButton.click();
+        return new LoginPage();
     }
 }
