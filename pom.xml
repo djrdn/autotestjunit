@@ -28,5 +28,25 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
+
+<!--    Бібліотека WebDriverManager — це дуже корисний інструмент,
+який автоматично керує драйверами
+браузерів (наприклад, ChromeDriver, GeckoDriver, EdgeDriver тощо) для Selenium WebDriver.-->
+
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>6.1.0</version>
+    </dependency>
+    <!--  бібліотека для роботи з конфігураційними файлами-->
+    <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
+    <dependency>
+      <groupId>com.typesafe</groupId>
+      <artifactId>config</artifactId>
+      <version>1.4.3</version>
+    </dependency>
+
   </dependencies>
+
+
 </project>
